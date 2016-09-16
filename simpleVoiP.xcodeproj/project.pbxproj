@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30719E221D6EC43E00624287 /* XCPjsua.c in Sources */ = {isa = PBXBuildFile; fileRef = 30719E211D6EC43E00624287 /* XCPjsua.c */; };
+		30E99EC31D548830007BE3EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E99EC21D548830007BE3EF /* main.m */; };
+		30E99EC61D548830007BE3EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E99EC51D548830007BE3EF /* AppDelegate.m */; };
+		30E99EC91D548830007BE3EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E99EC81D548830007BE3EF /* ViewController.m */; };
+		30E99ECE1D548830007BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E99ECD1D548830007BE3EF /* Assets.xcassets */; };
+		30E99ED11D548830007BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E99ECF1D548830007BE3EF /* LaunchScreen.storyboard */; };
+		30E99EDC1D548830007BE3EF /* simpleVoiPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E99EDB1D548830007BE3EF /* simpleVoiPTests.m */; };
+		30E99EE71D548830007BE3EF /* simpleVoiPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E99EE61D548830007BE3EF /* simpleVoiPUITests.m */; };
+		30E99F1D1D5489E8007BE3EF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F1C1D5489E8007BE3EF /* AVFoundation.framework */; };
+		30E99F1F1D5489EE007BE3EF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F1E1D5489EE007BE3EF /* CFNetwork.framework */; };
+		30E99F211D5489FB007BE3EF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F201D5489FB007BE3EF /* AudioToolbox.framework */; };
+		30E99F231D548E06007BE3EF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F221D548E06007BE3EF /* CoreMedia.framework */; };
+		30E99F4B1D548E62007BE3EF /* include in Resources */ = {isa = PBXBuildFile; fileRef = 30E99F4A1D548E62007BE3EF /* include */; };
+		30E99F601D5490FD007BE3EF /* libg7221codec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F4D1D5490FD007BE3EF /* libg7221codec-arm-apple-darwin_ios.a */; };
+		30E99F611D5490FD007BE3EF /* libgsmcodec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F4E1D5490FD007BE3EF /* libgsmcodec-arm-apple-darwin_ios.a */; };
+		30E99F621D5490FD007BE3EF /* libilbccodec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F4F1D5490FD007BE3EF /* libilbccodec-arm-apple-darwin_ios.a */; };
+		30E99F631D5490FD007BE3EF /* libpj-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F501D5490FD007BE3EF /* libpj-arm-apple-darwin_ios.a */; };
+		30E99F641D5490FD007BE3EF /* libpjlib-util-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F511D5490FD007BE3EF /* libpjlib-util-arm-apple-darwin_ios.a */; };
+		30E99F651D5490FD007BE3EF /* libpjmedia-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F521D5490FD007BE3EF /* libpjmedia-arm-apple-darwin_ios.a */; };
+		30E99F661D5490FD007BE3EF /* libpjmedia-audiodev-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F531D5490FD007BE3EF /* libpjmedia-audiodev-arm-apple-darwin_ios.a */; };
+		30E99F671D5490FD007BE3EF /* libpjmedia-codec-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F541D5490FD007BE3EF /* libpjmedia-codec-arm-apple-darwin_ios.a */; };
+		30E99F681D5490FD007BE3EF /* libpjmedia-videodev-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F551D5490FD007BE3EF /* libpjmedia-videodev-arm-apple-darwin_ios.a */; };
+		30E99F691D5490FD007BE3EF /* libpjnath-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F561D5490FD007BE3EF /* libpjnath-arm-apple-darwin_ios.a */; };
+		30E99F6A1D5490FD007BE3EF /* libpjsip-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F571D5490FD007BE3EF /* libpjsip-arm-apple-darwin_ios.a */; };
+		30E99F6B1D5490FD007BE3EF /* libpjsip-simple-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F581D5490FD007BE3EF /* libpjsip-simple-arm-apple-darwin_ios.a */; };
+		30E99F6C1D5490FD007BE3EF /* libpjsip-ua-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F591D5490FD007BE3EF /* libpjsip-ua-arm-apple-darwin_ios.a */; };
+		30E99F6D1D5490FD007BE3EF /* libpjsua-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5A1D5490FD007BE3EF /* libpjsua-arm-apple-darwin_ios.a */; };
+		30E99F6E1D5490FD007BE3EF /* libpjsua2-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5B1D5490FD007BE3EF /* libpjsua2-arm-apple-darwin_ios.a */; };
+		30E99F6F1D5490FD007BE3EF /* libresample-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5C1D5490FD007BE3EF /* libresample-arm-apple-darwin_ios.a */; };
+		30E99F701D5490FD007BE3EF /* libspeex-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5D1D5490FD007BE3EF /* libspeex-arm-apple-darwin_ios.a */; };
+		30E99F711D5490FD007BE3EF /* libsrtp-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5E1D5490FD007BE3EF /* libsrtp-arm-apple-darwin_ios.a */; };
+		30E99F721D5490FD007BE3EF /* libyuv-arm-apple-darwin_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E99F5F1D5490FD007BE3EF /* libyuv-arm-apple-darwin_ios.a */; };
+		A9B8852F1D8BF7090005B769 /* customPjsua.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B8852E1D8BF7090005B769 /* customPjsua.m */; };
+		A9B885371D8BF94C0005B769 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B885311D8BF94C0005B769 /* LoginViewController.m */; };
+		A9B885381D8BF94C0005B769 /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B885331D8BF94C0005B769 /* DialViewController.m */; };
+		A9B885391D8BF94C0005B769 /* IncomingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B885351D8BF94C0005B769 /* IncomingCallViewController.m */; };
+		A9B8853A1D8BF94C0005B769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B885361D8BF94C0005B769 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30E99ED81D548830007BE3EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E99EB61D548830007BE3EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E99EBD1D548830007BE3EF;
+			remoteInfo = simpleVoiP;
+		};
+		30E99EE31D548830007BE3EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30E99EB61D548830007BE3EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30E99EBD1D548830007BE3EF;
+			remoteInfo = simpleVoiP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30719E201D6EC42100624287 /* XCPjsua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPjsua.h; sourceTree = "<group>"; };
+		30719E211D6EC43E00624287 /* XCPjsua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XCPjsua.c; sourceTree = "<group>"; };
+		30E99EBE1D548830007BE3EF /* simpleVoiP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleVoiP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E99EC21D548830007BE3EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30E99EC41D548830007BE3EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30E99EC51D548830007BE3EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30E99EC71D548830007BE3EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30E99EC81D548830007BE3EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30E99ECD1D548830007BE3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30E99ED01D548830007BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30E99ED21D548830007BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E99ED71D548830007BE3EF /* simpleVoiPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleVoiPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E99EDB1D548830007BE3EF /* simpleVoiPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleVoiPTests.m; sourceTree = "<group>"; };
+		30E99EDD1D548830007BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E99EE21D548830007BE3EF /* simpleVoiPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleVoiPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E99EE61D548830007BE3EF /* simpleVoiPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = simpleVoiPUITests.m; sourceTree = "<group>"; };
+		30E99EE81D548830007BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E99F1C1D5489E8007BE3EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		30E99F1E1D5489EE007BE3EF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		30E99F201D5489FB007BE3EF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		30E99F221D548E06007BE3EF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		30E99F4A1D548E62007BE3EF /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		30E99F4D1D5490FD007BE3EF /* libg7221codec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libg7221codec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F4E1D5490FD007BE3EF /* libgsmcodec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgsmcodec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F4F1D5490FD007BE3EF /* libilbccodec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libilbccodec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F501D5490FD007BE3EF /* libpj-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpj-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F511D5490FD007BE3EF /* libpjlib-util-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F521D5490FD007BE3EF /* libpjmedia-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F531D5490FD007BE3EF /* libpjmedia-audiodev-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F541D5490FD007BE3EF /* libpjmedia-codec-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-codec-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F551D5490FD007BE3EF /* libpjmedia-videodev-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-videodev-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F561D5490FD007BE3EF /* libpjnath-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjnath-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F571D5490FD007BE3EF /* libpjsip-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F581D5490FD007BE3EF /* libpjsip-simple-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F591D5490FD007BE3EF /* libpjsip-ua-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5A1D5490FD007BE3EF /* libpjsua-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5B1D5490FD007BE3EF /* libpjsua2-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua2-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5C1D5490FD007BE3EF /* libresample-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libresample-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5D1D5490FD007BE3EF /* libspeex-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspeex-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5E1D5490FD007BE3EF /* libsrtp-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsrtp-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		30E99F5F1D5490FD007BE3EF /* libyuv-arm-apple-darwin_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libyuv-arm-apple-darwin_ios.a"; sourceTree = "<group>"; };
+		A9B8852D1D8BF7090005B769 /* customPjsua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customPjsua.h; sourceTree = "<group>"; };
+		A9B8852E1D8BF7090005B769 /* customPjsua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customPjsua.m; sourceTree = "<group>"; };
+		A9B885301D8BF94C0005B769 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A9B885311D8BF94C0005B769 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A9B885321D8BF94C0005B769 /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
+		A9B885331D8BF94C0005B769 /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
+		A9B885341D8BF94C0005B769 /* IncomingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingCallViewController.h; sourceTree = "<group>"; };
+		A9B885351D8BF94C0005B769 /* IncomingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingCallViewController.m; sourceTree = "<group>"; };
+		A9B885361D8BF94C0005B769 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30E99EBB1D548830007BE3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E99F6E1D5490FD007BE3EF /* libpjsua2-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F601D5490FD007BE3EF /* libg7221codec-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F6B1D5490FD007BE3EF /* libpjsip-simple-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F641D5490FD007BE3EF /* libpjlib-util-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F671D5490FD007BE3EF /* libpjmedia-codec-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F6F1D5490FD007BE3EF /* libresample-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F231D548E06007BE3EF /* CoreMedia.framework in Frameworks */,
+				30E99F701D5490FD007BE3EF /* libspeex-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F211D5489FB007BE3EF /* AudioToolbox.framework in Frameworks */,
+				30E99F661D5490FD007BE3EF /* libpjmedia-audiodev-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F1F1D5489EE007BE3EF /* CFNetwork.framework in Frameworks */,
+				30E99F631D5490FD007BE3EF /* libpj-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F6C1D5490FD007BE3EF /* libpjsip-ua-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F711D5490FD007BE3EF /* libsrtp-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F691D5490FD007BE3EF /* libpjnath-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F6A1D5490FD007BE3EF /* libpjsip-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F1D1D5489E8007BE3EF /* AVFoundation.framework in Frameworks */,
+				30E99F721D5490FD007BE3EF /* libyuv-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F611D5490FD007BE3EF /* libgsmcodec-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F6D1D5490FD007BE3EF /* libpjsua-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F621D5490FD007BE3EF /* libilbccodec-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F651D5490FD007BE3EF /* libpjmedia-arm-apple-darwin_ios.a in Frameworks */,
+				30E99F681D5490FD007BE3EF /* libpjmedia-videodev-arm-apple-darwin_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99ED41D548830007BE3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99EDF1D548830007BE3EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E99EB51D548830007BE3EF = {
+			isa = PBXGroup;
+			children = (
+				30E99F4C1D5490EB007BE3EF /* lib */,
+				30E99F4A1D548E62007BE3EF /* include */,
+				30E99F221D548E06007BE3EF /* CoreMedia.framework */,
+				30E99F201D5489FB007BE3EF /* AudioToolbox.framework */,
+				30E99F1E1D5489EE007BE3EF /* CFNetwork.framework */,
+				30E99F1C1D5489E8007BE3EF /* AVFoundation.framework */,
+				30E99EC01D548830007BE3EF /* simpleVoiP */,
+				30E99EDA1D548830007BE3EF /* simpleVoiPTests */,
+				30E99EE51D548830007BE3EF /* simpleVoiPUITests */,
+				30E99EBF1D548830007BE3EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30E99EBF1D548830007BE3EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30E99EBE1D548830007BE3EF /* simpleVoiP.app */,
+				30E99ED71D548830007BE3EF /* simpleVoiPTests.xctest */,
+				30E99EE21D548830007BE3EF /* simpleVoiPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30E99EC01D548830007BE3EF /* simpleVoiP */ = {
+			isa = PBXGroup;
+			children = (
+				A9B8852D1D8BF7090005B769 /* customPjsua.h */,
+				A9B8852E1D8BF7090005B769 /* customPjsua.m */,
+				A9B885301D8BF94C0005B769 /* LoginViewController.h */,
+				A9B885311D8BF94C0005B769 /* LoginViewController.m */,
+				A9B885321D8BF94C0005B769 /* DialViewController.h */,
+				A9B885331D8BF94C0005B769 /* DialViewController.m */,
+				A9B885341D8BF94C0005B769 /* IncomingCallViewController.h */,
+				A9B885351D8BF94C0005B769 /* IncomingCallViewController.m */,
+				A9B885361D8BF94C0005B769 /* Main.storyboard */,
+				30719E211D6EC43E00624287 /* XCPjsua.c */,
+				30719E201D6EC42100624287 /* XCPjsua.h */,
+				30E99EC41D548830007BE3EF /* AppDelegate.h */,
+				30E99EC51D548830007BE3EF /* AppDelegate.m */,
+				30E99EC71D548830007BE3EF /* ViewController.h */,
+				30E99EC81D548830007BE3EF /* ViewController.m */,
+				30E99ECD1D548830007BE3EF /* Assets.xcassets */,
+				30E99ECF1D548830007BE3EF /* LaunchScreen.storyboard */,
+				30E99ED21D548830007BE3EF /* Info.plist */,
+				30E99EC11D548830007BE3EF /* Supporting Files */,
+			);
+			path = simpleVoiP;
+			sourceTree = "<group>";
+		};
+		30E99EC11D548830007BE3EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30E99EC21D548830007BE3EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30E99EDA1D548830007BE3EF /* simpleVoiPTests */ = {
+			isa = PBXGroup;
+			children = (
+				30E99EDB1D548830007BE3EF /* simpleVoiPTests.m */,
+				30E99EDD1D548830007BE3EF /* Info.plist */,
+			);
+			path = simpleVoiPTests;
+			sourceTree = "<group>";
+		};
+		30E99EE51D548830007BE3EF /* simpleVoiPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30E99EE61D548830007BE3EF /* simpleVoiPUITests.m */,
+				30E99EE81D548830007BE3EF /* Info.plist */,
+			);
+			path = simpleVoiPUITests;
+			sourceTree = "<group>";
+		};
+		30E99F4C1D5490EB007BE3EF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				30E99F4D1D5490FD007BE3EF /* libg7221codec-arm-apple-darwin_ios.a */,
+				30E99F4E1D5490FD007BE3EF /* libgsmcodec-arm-apple-darwin_ios.a */,
+				30E99F4F1D5490FD007BE3EF /* libilbccodec-arm-apple-darwin_ios.a */,
+				30E99F501D5490FD007BE3EF /* libpj-arm-apple-darwin_ios.a */,
+				30E99F511D5490FD007BE3EF /* libpjlib-util-arm-apple-darwin_ios.a */,
+				30E99F521D5490FD007BE3EF /* libpjmedia-arm-apple-darwin_ios.a */,
+				30E99F531D5490FD007BE3EF /* libpjmedia-audiodev-arm-apple-darwin_ios.a */,
+				30E99F541D5490FD007BE3EF /* libpjmedia-codec-arm-apple-darwin_ios.a */,
+				30E99F551D5490FD007BE3EF /* libpjmedia-videodev-arm-apple-darwin_ios.a */,
+				30E99F561D5490FD007BE3EF /* libpjnath-arm-apple-darwin_ios.a */,
+				30E99F571D5490FD007BE3EF /* libpjsip-arm-apple-darwin_ios.a */,
+				30E99F581D5490FD007BE3EF /* libpjsip-simple-arm-apple-darwin_ios.a */,
+				30E99F591D5490FD007BE3EF /* libpjsip-ua-arm-apple-darwin_ios.a */,
+				30E99F5A1D5490FD007BE3EF /* libpjsua-arm-apple-darwin_ios.a */,
+				30E99F5B1D5490FD007BE3EF /* libpjsua2-arm-apple-darwin_ios.a */,
+				30E99F5C1D5490FD007BE3EF /* libresample-arm-apple-darwin_ios.a */,
+				30E99F5D1D5490FD007BE3EF /* libspeex-arm-apple-darwin_ios.a */,
+				30E99F5E1D5490FD007BE3EF /* libsrtp-arm-apple-darwin_ios.a */,
+				30E99F5F1D5490FD007BE3EF /* libyuv-arm-apple-darwin_ios.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30E99EBD1D548830007BE3EF /* simpleVoiP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E99EEB1D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiP" */;
+			buildPhases = (
+				30E99EBA1D548830007BE3EF /* Sources */,
+				30E99EBB1D548830007BE3EF /* Frameworks */,
+				30E99EBC1D548830007BE3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = simpleVoiP;
+			productName = simpleVoiP;
+			productReference = 30E99EBE1D548830007BE3EF /* simpleVoiP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30E99ED61D548830007BE3EF /* simpleVoiPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E99EEE1D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiPTests" */;
+			buildPhases = (
+				30E99ED31D548830007BE3EF /* Sources */,
+				30E99ED41D548830007BE3EF /* Frameworks */,
+				30E99ED51D548830007BE3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30E99ED91D548830007BE3EF /* PBXTargetDependency */,
+			);
+			name = simpleVoiPTests;
+			productName = simpleVoiPTests;
+			productReference = 30E99ED71D548830007BE3EF /* simpleVoiPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30E99EE11D548830007BE3EF /* simpleVoiPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30E99EF11D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiPUITests" */;
+			buildPhases = (
+				30E99EDE1D548830007BE3EF /* Sources */,
+				30E99EDF1D548830007BE3EF /* Frameworks */,
+				30E99EE01D548830007BE3EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30E99EE41D548830007BE3EF /* PBXTargetDependency */,
+			);
+			name = simpleVoiPUITests;
+			productName = simpleVoiPUITests;
+			productReference = 30E99EE21D548830007BE3EF /* simpleVoiPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30E99EB61D548830007BE3EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "akshay bansal";
+				TargetAttributes = {
+					30E99EBD1D548830007BE3EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					30E99ED61D548830007BE3EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 30E99EBD1D548830007BE3EF;
+					};
+					30E99EE11D548830007BE3EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 30E99EBD1D548830007BE3EF;
+					};
+				};
+			};
+			buildConfigurationList = 30E99EB91D548830007BE3EF /* Build configuration list for PBXProject "simpleVoiP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30E99EB51D548830007BE3EF;
+			productRefGroup = 30E99EBF1D548830007BE3EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30E99EBD1D548830007BE3EF /* simpleVoiP */,
+				30E99ED61D548830007BE3EF /* simpleVoiPTests */,
+				30E99EE11D548830007BE3EF /* simpleVoiPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30E99EBC1D548830007BE3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E99ED11D548830007BE3EF /* LaunchScreen.storyboard in Resources */,
+				30E99ECE1D548830007BE3EF /* Assets.xcassets in Resources */,
+				30E99F4B1D548E62007BE3EF /* include in Resources */,
+				A9B8853A1D8BF94C0005B769 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99ED51D548830007BE3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99EE01D548830007BE3EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30E99EBA1D548830007BE3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B885381D8BF94C0005B769 /* DialViewController.m in Sources */,
+				30719E221D6EC43E00624287 /* XCPjsua.c in Sources */,
+				30E99EC91D548830007BE3EF /* ViewController.m in Sources */,
+				A9B885371D8BF94C0005B769 /* LoginViewController.m in Sources */,
+				30E99EC61D548830007BE3EF /* AppDelegate.m in Sources */,
+				A9B8852F1D8BF7090005B769 /* customPjsua.m in Sources */,
+				A9B885391D8BF94C0005B769 /* IncomingCallViewController.m in Sources */,
+				30E99EC31D548830007BE3EF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99ED31D548830007BE3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E99EDC1D548830007BE3EF /* simpleVoiPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30E99EDE1D548830007BE3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E99EE71D548830007BE3EF /* simpleVoiPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30E99ED91D548830007BE3EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E99EBD1D548830007BE3EF /* simpleVoiP */;
+			targetProxy = 30E99ED81D548830007BE3EF /* PBXContainerItemProxy */;
+		};
+		30E99EE41D548830007BE3EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30E99EBD1D548830007BE3EF /* simpleVoiP */;
+			targetProxy = 30E99EE31D548830007BE3EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30E99ECF1D548830007BE3EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E99ED01D548830007BE3EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30E99EE91D548830007BE3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30E99EEA1D548830007BE3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30E99EEC1D548830007BE3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PJ_AUTOCONF,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = simpleVoiP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		30E99EED1D548830007BE3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = PJ_AUTOCONF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = simpleVoiP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		30E99EEF1D548830007BE3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = simpleVoiPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleVoiP.app/simpleVoiP";
+			};
+			name = Debug;
+		};
+		30E99EF01D548830007BE3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = simpleVoiPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpleVoiP.app/simpleVoiP";
+			};
+			name = Release;
+		};
+		30E99EF21D548830007BE3EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = simpleVoiPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = simpleVoiP;
+			};
+			name = Debug;
+		};
+		30E99EF31D548830007BE3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = simpleVoiPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akshay.simpleVoiPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = simpleVoiP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30E99EB91D548830007BE3EF /* Build configuration list for PBXProject "simpleVoiP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E99EE91D548830007BE3EF /* Debug */,
+				30E99EEA1D548830007BE3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E99EEB1D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E99EEC1D548830007BE3EF /* Debug */,
+				30E99EED1D548830007BE3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E99EEE1D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E99EEF1D548830007BE3EF /* Debug */,
+				30E99EF01D548830007BE3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30E99EF11D548830007BE3EF /* Build configuration list for PBXNativeTarget "simpleVoiPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E99EF21D548830007BE3EF /* Debug */,
+				30E99EF31D548830007BE3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30E99EB61D548830007BE3EF /* Project object */;
+}
