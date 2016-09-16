@@ -13,8 +13,7 @@
     pjsua_call_id _call_id;
 }
 
-@property (weak, nonatomic) IBOutlet UITextField *phoneNumberFiled;
-@property (weak, nonatomic) IBOutlet UIButton *actionButton;
+
 
 @end
 
@@ -33,6 +32,11 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [self __processMakeCall];
+
+}
+
 - (void)handleCallStatusChanged:(NSNotification *)notification {
     pjsua_call_id call_id = [notification.userInfo[@"call_id"] intValue];
     pjsip_inv_state state = [notification.userInfo[@"state"] intValue];
@@ -40,16 +44,22 @@
     if(call_id != _call_id) return;
     
     if (state == PJSIP_INV_STATE_DISCONNECTED) {
-        [self.actionButton setTitle:@"call" forState:UIControlStateNormal];
-        [self.actionButton setEnabled:YES];
+        self.CallStatus.text=@"Call Disconected";
+        /*[self.actionButton setTitle:@"call" forState:UIControlStateNormal];
+        [self.actionButton setEnabled:YES];*/
+        
     } else if(state == PJSIP_INV_STATE_CONNECTING){
-        NSLog(@"connecting...");
+        self.CallStatus.text=@"connecting...";
     } else if(state == PJSIP_INV_STATE_CONFIRMED) {
-        [self.actionButton setTitle:@"hang up" forState:UIControlStateNormal];
+        
+         self.CallStatus.text=@"Connected";
+        /*[self.actionButton setTitle:@"hang up" forState:UIControlStateNormal];
         [self.actionButton setEnabled:YES];
+         */
     }
 }
 
+/*
 - (IBAction)actionButtonTouched:(UIButton *)sender {
     if ([[sender titleForState:UIControlStateNormal] isEqualToString:@"call"]) {
         [self __processMakeCall];
@@ -59,10 +69,11 @@
     [sender setEnabled:NO];
 }
 
+*/
 - (void)__processMakeCall {
     pjsua_acc_id acct_id = (pjsua_acc_id)[[NSUserDefaults standardUserDefaults] integerForKey:@"login_account_id"];
     NSString *server = [[NSUserDefaults standardUserDefaults] stringForKey:@"server_uri"];
-    NSString *targetUri = [NSString stringWithFormat:@"sip:%@@%@", self.phoneNumberFiled.text , server];
+    NSString *targetUri = [NSString stringWithFormat:@"sip:%@@%@", self.phoneNumberFiled , server];
     
     pj_status_t status;
     pj_str_t dest_uri = pj_str((char *)targetUri.UTF8String);
@@ -88,5 +99,13 @@
 
 
 
+
+
+- (IBAction)EndCall:(id)sender {
+    
+    [self __processHangup];
+    [[[UIApplication sharedApplication] keyWindow].rootViewController dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 @end

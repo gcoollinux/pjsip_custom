@@ -18,6 +18,7 @@
 + (id)sharedManager;
 
 -(BOOL)initialisePjsua;
-- (void) sipRegister ;
-
+-(void) sipRegister ;
+-(void)makeCall:(NSString*)PhoneNumber;
+-(void)terminateSip;
 @end

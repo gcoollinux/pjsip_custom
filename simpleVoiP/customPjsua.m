@@ -44,6 +44,41 @@ static void on_reg_state(pjsua_acc_id acc_id);
     // Should never be called, but just here for clarity really.
 }
 
+
+-(void)terminateSip
+{
+    pjsua_destroy();
+}
+
+
+-(void)makeCall:(NSString*)PhoneNumber{
+    
+
+    
+   
+    
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+DialViewController *dialViewController = [storyboard instantiateViewControllerWithIdentifier:@"DialViewController"];
+    dialViewController.phoneNumberFiled=PhoneNumber;
+        
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIViewController *rootViewController = appDelegate.window.rootViewController;
+    [rootViewController presentViewController:dialViewController animated:YES completion:nil];
+    
+    
+    /*
+    
+        UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+        [keyWindow.layer addAnimation:transition forKey:@"change_view_controller"];
+        
+        keyWindow.rootViewController = dialViewController;
+    
+*/
+}
+
+
 - (void)__handleRegisterStatus:(NSNotification *)notification {
     pjsua_acc_id acc_id = [notification.userInfo[@"acc_id"] intValue];
     pjsip_status_code status = [notification.userInfo[@"status"] intValue];
@@ -184,11 +219,33 @@ static void on_reg_state(pjsua_acc_id acc_id);
     viewController.phoneNumber = phoneNumber;
     viewController.callId = callId;
     
-    
+    NSLog(@"call id=>%ld",(long)callId);
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     UIViewController *rootViewController = appDelegate.window.rootViewController;
     [rootViewController presentViewController:viewController animated:YES completion:nil];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
+-(NSString *)stringWithPJString:(const pj_str_t *)pjString {
+    NSString *result = [NSString alloc];
+    result = [result initWithBytesNoCopy:pjString->ptr
+                                  length:pjString->slen
+                                encoding:NSASCIIStringEncoding
+                            freeWhenDone:NO];
+    
+    return result;
+}
+
 
 
 static void on_incoming_call(pjsua_acc_id acc_id, pjsua_call_id call_id, pjsip_rx_data *rdata) {

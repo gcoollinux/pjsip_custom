@@ -39,7 +39,7 @@
     if(call_id != self.callId) return;
     
     if (state == PJSIP_INV_STATE_DISCONNECTED) {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        //[self dismissViewControllerAnimated:YES completion:nil];
     } else if(state == PJSIP_INV_STATE_CONNECTING){
         NSLog(@"connecting...");
     } else if(state == PJSIP_INV_STATE_CONFIRMED) {
@@ -48,11 +48,15 @@
 }
 
 - (IBAction)answerButtonTouched:(id)sender {
+    self.AnswerCallButton.enabled=false;
+    NSLog(@"call id=>%ld",(long)self.callId);
     pjsua_call_answer((pjsua_call_id)self.callId, 200, NULL, NULL);
 }
 
 - (IBAction)hangupButtonTouched:(id)sender {
     pjsua_call_hangup((pjsua_call_id)self.callId, 0, NULL, NULL);
+    [[[UIApplication sharedApplication] keyWindow].rootViewController dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 @end

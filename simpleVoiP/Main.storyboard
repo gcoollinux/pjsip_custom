@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vcb-Dv-tPF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="zde-B6-ico">
+            <objects>
+                <viewController id="Vcb-Dv-tPF" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FU2-cO-F9f"/>
+                        <viewControllerLayoutGuide type="bottom" id="OEk-LW-io6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jnb-nx-MTx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv5-c7-Dia">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="makeCall:" destination="Vcb-Dv-tPF" eventType="touchUpInside" id="Toh-3i-q3H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dv5-c7-Dia" firstAttribute="centerY" secondItem="Jnb-nx-MTx" secondAttribute="centerY" id="Vjp-pa-1uK"/>
+                            <constraint firstItem="Dv5-c7-Dia" firstAttribute="centerX" secondItem="Jnb-nx-MTx" secondAttribute="centerX" id="iqx-sP-hiT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ci4-9h-mbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="72"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -111,49 +142,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU8-6D-saK">
-                                <rect key="frame" x="20" y="82" width="97" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYq-fd-RiN">
+                                <rect key="frame" x="166" y="153" width="54" height="30"/>
+                                <state key="normal" title="EndCAll"/>
+                                <connections>
+                                    <action selector="EndCall:" destination="bfp-fx-wcr" eventType="touchUpInside" id="FaI-hH-vf2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-JZ-H3C">
+                                <rect key="frame" x="133" y="103" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yc8-vv-6a7">
-                                <rect key="frame" x="285" y="131" width="30" height="30"/>
-                                <state key="normal" title="call">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionButtonTouched:" destination="bfp-fx-wcr" eventType="touchUpInside" id="4ph-mA-Nfb"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBT-h9-hCj">
-                                <rect key="frame" x="125" y="78" width="455" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="QBT-h9-hCj" firstAttribute="trailing" secondItem="wg4-OY-1T4" secondAttribute="trailingMargin" id="59T-fv-zHX"/>
-                            <constraint firstAttribute="centerX" secondItem="Yc8-vv-6a7" secondAttribute="centerX" id="GZk-D9-sHA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LU8-6D-saK" secondAttribute="trailing" constant="483" id="LyW-Jh-GhG"/>
-                            <constraint firstItem="Yc8-vv-6a7" firstAttribute="top" secondItem="QBT-h9-hCj" secondAttribute="bottom" constant="23" id="S4C-fm-q9W"/>
-                            <constraint firstItem="QBT-h9-hCj" firstAttribute="centerY" secondItem="LU8-6D-saK" secondAttribute="centerY" id="aBx-2M-ffX"/>
-                            <constraint firstItem="QBT-h9-hCj" firstAttribute="centerY" secondItem="LU8-6D-saK" secondAttribute="centerY" constant="1.5" id="b9Y-4Z-Vc5"/>
-                            <constraint firstItem="QBT-h9-hCj" firstAttribute="leading" secondItem="LU8-6D-saK" secondAttribute="trailing" constant="8" id="bsn-XO-mmN"/>
-                            <constraint firstItem="LU8-6D-saK" firstAttribute="leading" secondItem="wg4-OY-1T4" secondAttribute="leadingMargin" id="lCe-3e-8qs"/>
-                            <constraint firstItem="LU8-6D-saK" firstAttribute="top" secondItem="hEN-A2-MHJ" secondAttribute="bottom" constant="62" id="v1O-Wr-DTe"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="LyW-Jh-GhG"/>
-                                <exclude reference="b9Y-4Z-Vc5"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="actionButton" destination="Yc8-vv-6a7" id="XBm-rJ-VYF"/>
-                        <outlet property="phoneNumberFiled" destination="QBT-h9-hCj" id="Jd1-6e-WPX"/>
+                        <outlet property="CallStatus" destination="Wge-JZ-H3C" id="JSv-is-V6i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GjJ-xW-jic" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,40 +181,50 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caller ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ac-4w-y4y">
                                 <rect key="frame" x="268" y="56" width="64.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-SC-7lp">
-                                <rect key="frame" x="70" y="375" width="51" height="30"/>
-                                <state key="normal" title="Answer">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="answerButtonTouched:" destination="ymB-Vv-rw9" eventType="touchUpInside" id="gTB-T1-xPk"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-2g-D7h">
-                                <rect key="frame" x="474" y="375" width="56" height="30"/>
+                                <rect key="frame" x="300" y="535" width="290" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.17960729209796256" blue="0.26049868120901765" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="hang up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="hangupButtonTouched:" destination="ymB-Vv-rw9" eventType="touchUpInside" id="v8q-Zd-jJ8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehx-SC-7lp">
+                                <rect key="frame" x="10" y="535" width="290" height="45"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.67450980390000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9Wc-kg-Fmi"/>
+                                </constraints>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonTouched:" destination="ymB-Vv-rw9" eventType="touchUpInside" id="gTB-T1-xPk"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4039215686" green="0.70980392160000005" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="fH4-2g-D7h" firstAttribute="height" secondItem="ehx-SC-7lp" secondAttribute="height" id="12e-vD-znx"/>
+                            <constraint firstAttribute="trailing" secondItem="fH4-2g-D7h" secondAttribute="trailing" constant="10" id="C4U-Db-LXl"/>
                             <constraint firstItem="2Ac-4w-y4y" firstAttribute="top" secondItem="wUC-aC-YaT" secondAttribute="bottom" constant="36" id="OUx-8u-1SC"/>
-                            <constraint firstItem="1tz-pn-MoQ" firstAttribute="top" secondItem="ehx-SC-7lp" secondAttribute="bottom" constant="195" id="RCE-eF-8RC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fH4-2g-D7h" secondAttribute="trailing" constant="50" id="d73-h1-xgf"/>
-                            <constraint firstItem="ehx-SC-7lp" firstAttribute="centerY" secondItem="fH4-2g-D7h" secondAttribute="centerY" id="eYr-bn-ALK"/>
+                            <constraint firstItem="ehx-SC-7lp" firstAttribute="leading" secondItem="bbV-Y3-faz" secondAttribute="leading" constant="10" id="T6J-zQ-MXt"/>
+                            <constraint firstItem="fH4-2g-D7h" firstAttribute="width" secondItem="ehx-SC-7lp" secondAttribute="width" id="WGp-Yd-kwT"/>
+                            <constraint firstItem="fH4-2g-D7h" firstAttribute="leading" secondItem="ehx-SC-7lp" secondAttribute="trailing" id="YlY-lJ-alI"/>
+                            <constraint firstItem="fH4-2g-D7h" firstAttribute="centerY" secondItem="ehx-SC-7lp" secondAttribute="centerY" id="bdF-e1-qpp"/>
+                            <constraint firstItem="1tz-pn-MoQ" firstAttribute="top" secondItem="ehx-SC-7lp" secondAttribute="bottom" constant="20" id="n1L-Js-YAk"/>
                             <constraint firstAttribute="centerX" secondItem="2Ac-4w-y4y" secondAttribute="centerX" id="n4N-08-32N"/>
-                            <constraint firstItem="ehx-SC-7lp" firstAttribute="leading" secondItem="bbV-Y3-faz" secondAttribute="leadingMargin" constant="50" id="rg5-Tn-Te0"/>
-                            <constraint firstItem="1tz-pn-MoQ" firstAttribute="top" secondItem="fH4-2g-D7h" secondAttribute="bottom" constant="195" id="t4A-KW-hMx"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AnswerCallButton" destination="ehx-SC-7lp" id="AaL-Z2-3nv"/>
                         <outlet property="phoneNumberLabel" destination="2Ac-4w-y4y" id="rgh-9N-8JK"/>
                     </connections>
                 </viewController>

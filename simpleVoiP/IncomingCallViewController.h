@@ -12,5 +12,6 @@
 
 @property (nonatomic, copy) NSString *phoneNumber;
 @property (nonatomic, assign) NSInteger callId;
+@property (strong, nonatomic) IBOutlet UIButton *AnswerCallButton;
 
 @end

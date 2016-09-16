@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DialViewController : UIViewController
-
+@property (weak, nonatomic)  NSString *phoneNumberFiled;
+- (IBAction)EndCall:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *CallStatus;
+- (void)__processMakeCall;
 @end

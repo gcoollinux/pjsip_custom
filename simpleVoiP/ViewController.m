@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 //#import "XCPjsua.h"
+#import "customPjsua.h"
 
 @interface ViewController ()
 {
-    
+   customPjsua *sharedObj;
 
 }
 - (IBAction)makeCall:(id)sender;
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    sharedObj=[customPjsua sharedManager];
     
     
     
@@ -34,12 +36,23 @@
     // makeCall("sip:puja@sip.linphone.org");
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+       
+        
         dispatch_async(dispatch_get_main_queue(), ^{
 
+            [sharedObj initialisePjsua];
+            sharedObj.serverField=@"108.170.10.194";
+            sharedObj.usernameField=@"800";
+            sharedObj.passwordField=@"1234";
+            [sharedObj sipRegister];
             //startPjsip("800", "108.170.10.194");
 
          });
      });
+
+
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +75,8 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
          dispatch_async(dispatch_get_main_queue(), ^{
         
+             [sharedObj makeCall:@"101"];
+             
          });
     });
 }
